@@ -1,0 +1,9 @@
+<article class="post-card">
+  <div class="post-card-meta">
+    <span>{{ include.post.date | date: "%d.%m.%Y" }}</span>
+    {% if include.post.categoria %}<span class="cat-chip">{{ include.post.categoria_label | default: include.post.categoria }}</span>{% endif %}
+  </div>
+  <h3><a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a></h3>
+  <p>{{ include.post.resumo }}</p>
+  <a class="read-on" href="{{ include.post.url | relative_url }}">Continuar lendo →</a>
+</article>

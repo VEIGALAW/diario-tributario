@@ -1,0 +1,22 @@
+---
+layout: default
+title: "Ideias"
+nav: ideias
+---
+<header class="page-hero">
+  <h1>Ideias &amp; indagações</h1>
+  <p class="page-lede">Hipóteses em formação, provocações, métodos de estudo e perguntas ainda sem resposta — o laboratório aberto do pensamento.</p>
+</header>
+
+<div class="list-wrap">
+  {% assign posts = site.posts | where: "categoria", "ideias" %}
+  {% if posts.size > 0 %}
+  <div class="post-grid">
+    {% for post in posts %}
+      {% include post-card.html post=post %}
+    {% endfor %}
+  </div>
+  {% else %}
+  <p style="text-align:center; color: var(--ink-soft); font-style: italic;">As primeiras ideias chegam em breve.</p>
+  {% endif %}
+</div>

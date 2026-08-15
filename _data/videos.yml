@@ -1,0 +1,91 @@
+# destaques: os vídeos mais assistidos do canal (aparecem na home)
+destaques:
+  - id: lZEQBtGzAV8
+    titulo: "Atualizar valores pela SELIC — fácil e rápido"
+    dur: "8:11"
+    views: "31 mil visualizações"
+  - id: jRK1mL_T9j8
+    titulo: "Como calcular os honorários sucumbenciais do art. 85, §3º, CPC"
+    dur: "5:27"
+    views: "8,3 mil visualizações"
+  - id: OvhOdmZ6Cm8
+    titulo: "Mandado de segurança tributário — peça 2ª Fase OAB"
+    dur: "16:44"
+    views: "6,6 mil visualizações"
+  - id: h-igF1P6ql0
+    titulo: "A diferença entre negar seguimento e inadmitir o REsp ou RE"
+    dur: "9:29"
+    views: "3,7 mil visualizações"
+
+series:
+  - nome: "Contabilidade para Advogados"
+    desc: "Curso completo em 6 aulas: a ponte entre a contabilidade e o direito tributário que ninguém ensina na faculdade."
+    videos:
+      - { id: FYgqE1XqqTk, titulo: "Aula 01 — Contabilidade Tributária", dur: "25:56" }
+      - { id: ZycSbQuijOM, titulo: "Aula 02 — Contabilidade Tributária", dur: "25:38" }
+      - { id: 9aWI_1qHU1A, titulo: "Aula 03 — Contabilidade Tributária", dur: "18:55" }
+      - { id: zeZhVsDveHA, titulo: "Aula 04 — Contabilidade Tributária", dur: "20:27" }
+      - { id: KaPMS70opSA, titulo: "Aula 05 — Contabilidade Tributária", dur: "12:13" }
+      - { id: CSnWETXNnwM, titulo: "Aula 06 — Contabilidade Tributária", dur: "20:45" }
+
+  - nome: "2ª Fase OAB — Peças e Recursos"
+    desc: "O arsenal processual tributário peça por peça: das ações antiexacionais aos recursos aos tribunais superiores."
+    videos:
+      - { id: OvhOdmZ6Cm8, titulo: "Mandado de segurança tributário", dur: "16:44" }
+      - { id: XVwxJTuEF9w, titulo: "Ação anulatória de débito fiscal", dur: "26:25" }
+      - { id: eX3TyekTCbo, titulo: "Ação declaratória de inexistência de relação jurídico-tributária", dur: "18:09" }
+      - { id: MwpyLBqoj2c, titulo: "Ação declaratória com repetição de indébito fiscal", dur: "30:07" }
+      - { id: GaHo7L2VTls, titulo: "Repetição de indébito", dur: "12:57" }
+      - { id: sGVDdtMniI8, titulo: "Ação de consignação em pagamento", dur: "22:33" }
+      - { id: j7sKQMcfpqM, titulo: "Embargos à execução fiscal", dur: "17:17" }
+      - { id: tZVx7st0mMI, titulo: "Exceção de pré-executividade fiscal", dur: "19:57" }
+      - { id: H4b7_0WdnMg, titulo: "Apelação", dur: "12:08" }
+      - { id: ftNw2ZcZC9g, titulo: "Agravo de instrumento", dur: "13:40" }
+      - { id: g-I9EluAyME, titulo: "Agravo interno", dur: "15:58" }
+      - { id: byusiZ6CrdE, titulo: "Recurso extraordinário", dur: "18:04" }
+      - { id: o6Vn2Zijn3Q, titulo: "Recurso especial", dur: "25:45" }
+      - { id: eB-UcGDV_ec, titulo: "Embargos de declaração", dur: "18:36" }
+      - { id: 4Mj_AHQQluM, titulo: "ROC tributário", dur: "12:43" }
+      - { id: Sw2cYR7nZ4U, titulo: "Como identificar qual peça usar", dur: "5:12" }
+      - { id: vPfjz9KRkpY, titulo: "Adivinhando a sua peça", dur: "3:53" }
+      - { id: Bvw7797huI4, titulo: "Artigos para grifar", dur: "2:56" }
+      - { id: yABgNNlDDuU, titulo: "Artigos mais cobrados", dur: "19:33" }
+
+  - nome: "Fundamentos & CTN Comentado"
+    desc: "A base dogmática: conceito de tributo, espécies tributárias e os artigos do CTN comentados um a um."
+    videos:
+      - { id: bSzr1JBR6Sw, titulo: "Noções introdutórias — receitas públicas", dur: "7:04" }
+      - { id: 1Pin3JkvhMM, titulo: "Conceito de tributo", dur: "9:58" }
+      - { id: flneYVH6ed8, titulo: "Artigo 1º do CTN — comentado", dur: "3:49" }
+      - { id: _xFLtKksSIw, titulo: "Artigo 3º do CTN — comentado", dur: "4:56" }
+      - { id: MhpXTxA6Was, titulo: "Artigo 4º do CTN — comentado", dur: "7:45" }
+      - { id: -ngU5yx6Iw8, titulo: "Natureza jurídica do tributo", dur: "6:49" }
+      - { id: gL9r_KcpkPs, titulo: "Teoria pentapartite e tripartite", dur: "6:42" }
+      - { id: PPclVqrKJO8, titulo: "Taxas", dur: "7:02" }
+      - { id: jkelpw3Rv7M, titulo: "Impostos — noções gerais", dur: "7:56" }
+      - { id: dUoQubigwc4, titulo: "Contribuições de melhoria", dur: "10:27" }
+      - { id: rtdM7HFzkfI, titulo: "Contribuições especiais", dur: "7:04" }
+      - { id: h9JvFh4nT54, titulo: "Empréstimo compulsório", dur: "9:00" }
+      - { id: SalDTIWNFYo, titulo: "Limitações constitucionais ao poder de tributar", dur: "4:35" }
+      - { id: FReWH02hPvw, titulo: "Princípio da legalidade", dur: "9:39" }
+
+  - nome: "Prática & Cálculos"
+    desc: "O dia a dia do contencioso: atualização de valores, honorários, cumprimento de sentença contra a Fazenda."
+    videos:
+      - { id: lZEQBtGzAV8, titulo: "Atualizar valores pela SELIC — fácil e rápido", dur: "8:11" }
+      - { id: jRK1mL_T9j8, titulo: "Honorários sucumbenciais do art. 85, §3º, CPC", dur: "5:27" }
+      - { id: h-igF1P6ql0, titulo: "Negar seguimento × inadmitir REsp/RE", dur: "9:29" }
+      - { id: wEbBp3yyddg, titulo: "Cumprimento de sentença contra a Fazenda Pública", dur: "15:42" }
+      - { id: JSrXfbhGSuI, titulo: "Contribuição previdenciária patronal e ações trabalhistas (CPRB)", dur: "8:20" }
+
+  - nome: "Estudos & Atualidades"
+    desc: "Temas que atravessaram meu radar: PERSE, trust, teto de multas, método de estudo e mais."
+    videos:
+      - { id: jBUtJihzYzM, titulo: "PERSE — Projeto de Lei 1026/24", dur: "6:34" }
+      - { id: XMRnnkGIK94, titulo: "Teto das multas em direito tributário", dur: "9:34" }
+      - { id: 8OBhCjokVeA, titulo: "Como ler 3 ou mais artigos científicos por dia", dur: "13:10" }
+      - { id: Oaaq3ub3j9A, titulo: "Tributação do trust", dur: "15:13" }
+      - { id: LhG0k--h5Ck, titulo: "Projeto de Lei 4.758/2020 (trust brasileiro)", dur: "8:42" }
+      - { id: IW_gj3228wY, titulo: "TIT altera Súmula 10 — Selic como teto da correção estadual", dur: "5:34" }
+      - { id: 7890uSSwxak, titulo: "Prescrição e decadência", dur: "12:19" }
+      - { id: c89PG2VURvM, titulo: "Direito processual tributário — princípios", dur: "24:18" }

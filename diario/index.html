@@ -1,0 +1,17 @@
+---
+layout: default
+title: "Diário"
+nav: diario
+---
+<header class="page-hero">
+  <h1>O diário</h1>
+  <p class="page-lede">Todas as entradas, em ordem cronológica inversa: estudos do doutorado, aprendizados da prática, leituras e indagações — o registro bruto da jornada.</p>
+</header>
+
+<div class="list-wrap">
+  <div class="post-grid">
+    {% for post in site.posts %}
+      {% include post-card.html post=post %}
+    {% endfor %}
+  </div>
+</div>

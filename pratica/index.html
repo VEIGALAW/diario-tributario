@@ -1,0 +1,22 @@
+---
+layout: default
+title: "Prática"
+nav: pratica
+---
+<header class="page-hero">
+  <h1>Da prática</h1>
+  <p class="page-lede">O que o dia a dia do direito tributário ensina e a doutrina ainda não escreveu: problemas reais, soluções testadas e as lições que só a trincheira dá.</p>
+</header>
+
+<div class="list-wrap">
+  {% assign posts = site.posts | where: "categoria", "pratica" %}
+  {% if posts.size > 0 %}
+  <div class="post-grid">
+    {% for post in posts %}
+      {% include post-card.html post=post %}
+    {% endfor %}
+  </div>
+  {% else %}
+  <p style="text-align:center; color: var(--ink-soft); font-style: italic;">As primeiras entradas da prática chegam em breve.</p>
+  {% endif %}
+</div>

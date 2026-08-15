@@ -1,0 +1,44 @@
+---
+layout: default
+title: "Publicações"
+nav: publicacoes
+---
+<header class="page-hero">
+  <h1>Publicações</h1>
+  <p class="page-lede">Livro, artigos acadêmicos e colunas — o que já foi publicado ao longo da jornada.</p>
+</header>
+
+<div class="list-wrap">
+  <span class="section-kicker">Livro</span>
+  <div class="pub-book" style="margin-top: 0.8rem;">
+    <div class="pub-book-cover"><span>Tributação sobre<br>lucros e<br>dividendos<br>—<br>IBDT · 2025</span></div>
+    <div>
+      <p class="pub-meta">{{ site.data.publicacoes.livro.meta }}</p>
+      <h3>{{ site.data.publicacoes.livro.titulo }}</h3>
+      <p class="pub-abstract">{{ site.data.publicacoes.livro.desc }}</p>
+    </div>
+  </div>
+
+  <span class="section-kicker" style="display:block; margin-top: 2.6rem;">Artigos acadêmicos</span>
+  {% for a in site.data.publicacoes.academicos %}
+  <div class="pub-book" style="grid-template-columns: 1fr; margin-top: 0.8rem;">
+    <div>
+      <p class="pub-meta">{{ a.veiculo }} · {{ a.ano }}</p>
+      <h3><a href="{{ a.url }}" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">{{ a.titulo }}</a></h3>
+      <p class="pub-abstract"><strong>{{ a.autores }}.</strong> {{ a.desc }}</p>
+      <p style="margin-top: 0.8rem;"><a class="section-more" href="{{ a.url }}" target="_blank" rel="noopener">Ler na revista</a></p>
+    </div>
+  </div>
+  {% endfor %}
+
+  <span class="section-kicker" style="display:block; margin-top: 2.6rem; margin-bottom: 1rem;">Migalhas — colunas publicadas</span>
+  <ul class="pub-list">
+    {% for m in site.data.publicacoes.migalhas %}
+    <li>
+      <a href="{{ m.url }}" target="_blank" rel="noopener">{{ m.titulo }}</a>
+      <span class="pub-date">{{ m.data }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+  <p style="margin-top: 1.6rem;"><a class="section-more" href="{{ site.migalhas_author }}" target="_blank" rel="noopener">Página de autor no Migalhas</a></p>
+</div>

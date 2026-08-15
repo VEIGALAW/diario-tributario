@@ -1,0 +1,22 @@
+---
+layout: default
+title: "Doutorado"
+nav: doutorado
+---
+<header class="page-hero">
+  <h1>Doutorado — PUC-SP</h1>
+  <p class="page-lede">O caminho da tese em tempo real: aulas do Núcleo III, fichamentos, seminários e a construção da pesquisa sobre a tributação da renda do capital — sob orientação da Profa. Dra. Luiza Nagib.</p>
+</header>
+
+<div class="list-wrap">
+  {% assign posts = site.posts | where: "categoria", "doutorado" %}
+  {% if posts.size > 0 %}
+  <div class="post-grid">
+    {% for post in posts %}
+      {% include post-card.html post=post %}
+    {% endfor %}
+  </div>
+  {% else %}
+  <p style="text-align:center; color: var(--ink-soft); font-style: italic;">As primeiras entradas do doutorado chegam em breve.</p>
+  {% endif %}
+</div>

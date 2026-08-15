@@ -1,0 +1,28 @@
+livro:
+  titulo: "Tributação sobre lucros e dividendos: uma análise comparada entre os métodos de integração no Chile e no Brasil"
+  meta: "IBDT — Instituto Brasileiro de Direito Tributário · São Paulo · 2025"
+  desc: "Fruto do Mestrado Profissional em Direito Tributário Internacional e Comparado (IBDT), sob orientação da Profa. Dra. Martha Toribio Leão. A obra reconstrói a história da tributação da renda, sistematiza os métodos de integração PJ–PF e usa trinta anos de experiência chilena para diagnosticar o modelo brasileiro — antecipando criticamente o debate que desaguaria na Lei nº 15.270/2025."
+
+academicos:
+  - titulo: "O Imposto de Renda Mínimo, os métodos de integração e o exemplo chileno: contributo para o debate da reforma da tributação da renda no Brasil"
+    autores: "Martha Toribio Leão e Rafael Maldonado Canesso"
+    veiculo: "Revista de Direito Tributário da APET, n. 53"
+    ano: "2026"
+    url: "https://revistas.apet.org.br/index.php/rdta/article/view/825"
+    desc: "Exame crítico do IRPFM instituído pela Lei nº 15.270/2025 e de seus efeitos sobre a integração entre a tributação da pessoa jurídica e da pessoa física, em diálogo com o modelo chileno de imputação."
+
+migalhas:
+  - { titulo: "A inconstitucionalidade da multa por negativa de compensação tributária", data: "06.06.2023", url: "https://www.migalhas.com.br/depeso/387764/inconstitucionalidade-da-multa-por-negativa-de-compensacao-tributaria" }
+  - { titulo: "ITCMD, trust, Sísifo e o fisco de São Paulo", data: "08.05.2023", url: "https://www.migalhas.com.br/depeso/386022/itcmd-trust-sisifo-e-o-fisco-de-sao-paulo" }
+  - { titulo: "Compensação tributária — multa isolada — inconstitucionalidade", data: "06.04.2023", url: "https://www.migalhas.com.br/depeso/384392/compensacao-tributaria--multa-isolada--inconstitucionalidade" }
+  - { titulo: "Aspectos tributários do PLP 145/22 sobre o PL instituidor do trust brasileiro", data: "21.03.2023", url: "https://www.migalhas.com.br/depeso/383338/aspectos-tributarios-do-plp-145-22-sobre-o-pl-4-758-20" }
+  - { titulo: "PL 798/21 — Repatriação de valores mantidos no exterior", data: "16.03.2023", url: "https://www.migalhas.com.br/depeso/383107/pl-798-21--repatriacao-de-valores-mantidos-no-exterior" }
+  - { titulo: "Medidas tributárias recentemente adotadas pelo novo Governo Federal", data: "15.03.2023", url: "https://www.migalhas.com.br/depeso/383017/medidas-tributarias-recentemente-adotadas-pelo-novo-governo-federal" }
+  - { titulo: "Lei 14.478/22 — Regulamentação do mercado de criptomoedas", data: "14.03.2023", url: "https://www.migalhas.com.br/depeso/382931/lei-14-478-22--regulamentacao-do-mercado-de-criptomoedas" }
+  - { titulo: "IR sobre pensão alimentícia — decisão do STF", data: "13.03.2023", url: "https://www.migalhas.com.br/depeso/382853/ir-sobre-pensao-alimenticia--decisao-do-stf" }
+  - { titulo: "Resolução CVM 166/22 — S/As de menor porte — publicações", data: "20.10.2022", url: "https://www.migalhas.com.br/depeso/375587/resolucao-cvm-166-22--s-as-de-menor-porte--publicacoes" }
+  - { titulo: "JUCESP publica novas regras para balanços contábeis", data: "06.10.2022", url: "https://www.migalhas.com.br/depeso/374786/jucesp-publica-novas-regras-para-balancos-contabeis" }
+  - { titulo: "Exclusão da TUST e da TUSD da base de cálculo do ICMS", data: "06.09.2022", url: "https://www.migalhas.com.br/depeso/372929/exclusao-do-tust-e-tusd-da-base-de-calculo-do-icms" }
+  - { titulo: "Interpretação do PL 4758/20: críticas e elogios ao trust brasileiro", data: "23.08.2022", url: "https://www.migalhas.com.br/depeso/372082/interpretacao-do-pl-4758-20-criticas-e-elogios-ao-trust-brasileiro" }
+  - { titulo: "Tributação do trust", data: "05.08.2022", url: "https://www.migalhas.com.br/depeso/371090/tributacao-do-trust" }
+  - { titulo: "TIT/SP adota Selic após revisão da Súmula 10", data: "06.07.2022", url: "https://www.migalhas.com.br/depeso/369201/tit-sp-adota-selic-apos-revisao-da-sumula-10" }

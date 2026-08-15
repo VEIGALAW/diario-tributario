@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<article>
+  <header class="post-hero">
+    <div class="post-card-meta">
+      <span>{{ page.date | date: "%d.%m.%Y" }}</span>
+      {% if page.categoria %}<span class="cat-chip">{{ page.categoria_label | default: page.categoria }}</span>{% endif %}
+      <span>{{ content | number_of_words | divided_by: 190 | at_least: 1 }} min de leitura</span>
+    </div>
+    <h1>{{ page.title }}</h1>
+    {% if page.resumo %}<p class="post-resumo">{{ page.resumo }}</p>{% endif %}
+    <hr class="post-rule">
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <footer class="post-footer">
+    <nav class="post-nav">
+      {% if page.previous %}
+      <a href="{{ page.previous.url | relative_url }}"><span class="dir">← Anterior</span>{{ page.previous.title }}</a>
+      {% endif %}
+      {% if page.next %}
+      <a class="next" href="{{ page.next.url | relative_url }}"><span class="dir">Próximo →</span>{{ page.next.title }}</a>
+      {% endif %}
+    </nav>
+  </footer>
+</article>
