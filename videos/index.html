@@ -5,24 +5,24 @@ nav: videos
 ---
 <header class="page-hero">
   <h1>O canal</h1>
-  <p class="page-lede">52 vídeos de estudos em direito tributário — cursos completos, peças da 2ª Fase da OAB, CTN comentado e prática do contencioso. Tudo gravado, tudo gratuito.</p>
-  <div class="hero-actions">
-    <a class="btn btn-solid" href="{{ site.youtube_channel }}" target="_blank" rel="noopener">Inscrever-se no canal</a>
+  <p class="page-lede">São 52 vídeos de estudos em direito tributário, todos gratuitos: cursos completos, peças da 2ª Fase da OAB, o CTN comentado artigo por artigo e a prática do contencioso.</p>
+  <div class="hero-actions" style="justify-content: center;">
+    <a class="btn btn-green" href="{{ site.youtube_channel }}" target="_blank" rel="noopener">Inscrever-se no canal</a>
   </div>
 </header>
 
 <div class="list-wrap">
-  <div class="video-embed">
-    <iframe src="https://www.youtube-nocookie.com/embed/lZEQBtGzAV8" title="Atualizar valores pela SELIC — fácil e rápido" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+  <div class="video-embed reveal">
+    <iframe src="https://www.youtube-nocookie.com/embed/lZEQBtGzAV8" title="Atualizar valores pela SELIC, fácil e rápido" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
   </div>
 
   {% for serie in site.data.videos.series %}
   <div class="video-series-block">
-    <h2 class="video-series-title">{{ serie.nome }}</h2>
-    <p class="video-series-desc">{{ serie.desc }}</p>
+    <h2 class="video-series-title reveal">{{ serie.nome }}</h2>
+    <p class="video-series-desc reveal">{{ serie.desc }}</p>
     <div class="video-grid">
       {% for v in serie.videos %}
-      <a class="video-card" href="https://www.youtube.com/watch?v={{ v.id }}" target="_blank" rel="noopener">
+      <a class="video-card reveal" href="https://www.youtube.com/watch?v={{ v.id }}" target="_blank" rel="noopener">
         <div class="video-thumb">
           <img src="https://i.ytimg.com/vi/{{ v.id }}/hqdefault.jpg" alt="{{ v.titulo }}" loading="lazy">
           <span class="video-dur">{{ v.dur }}</span>

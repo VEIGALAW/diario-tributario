@@ -2,6 +2,22 @@
 layout: default
 ---
 <article>
+  {% if page.imagem %}
+  <header class="post-cover">
+    <div class="cover-bg">
+      <img src="{{ page.imagem }}?q=80&w=2400&auto=format&fit=crop" alt="{{ page.imagem_alt | default: page.title }}" fetchpriority="high">
+    </div>
+    <div class="post-cover-copy">
+      <div class="post-card-meta">
+        <span>{{ page.date | date: "%d.%m.%Y" }}</span>
+        {% if page.categoria %}<span class="cat-chip">{{ page.categoria_label | default: page.categoria }}</span>{% endif %}
+        <span>{{ content | number_of_words | divided_by: 190 | at_least: 1 }} min de leitura</span>
+      </div>
+      <h1>{{ page.title }}</h1>
+      {% if page.resumo %}<p class="post-resumo">{{ page.resumo }}</p>{% endif %}
+    </div>
+  </header>
+  {% else %}
   <header class="post-hero">
     <div class="post-card-meta">
       <span>{{ page.date | date: "%d.%m.%Y" }}</span>
@@ -12,6 +28,7 @@ layout: default
     {% if page.resumo %}<p class="post-resumo">{{ page.resumo }}</p>{% endif %}
     <hr class="post-rule">
   </header>
+  {% endif %}
 
   <div class="post-content">
     {{ content }}

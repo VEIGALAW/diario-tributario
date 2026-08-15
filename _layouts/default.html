@@ -6,18 +6,32 @@
   {% seo %}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2218%22 fill=%22%2316382B%22/><text x=%2250%22 y=%2268%22 font-size=%2252%22 text-anchor=%22middle%22 fill=%22%23C9A45C%22 font-family=%22Georgia,serif%22>DT</text></svg>">
 </head>
 <body>
+  <div class="progress" aria-hidden="true"></div>
+
+  <div class="topbar" aria-hidden="false">
+    <a class="topbar-brand" href="{{ '/' | relative_url }}">Diário Tributário</a>
+    <nav>
+      <a href="{{ '/diario/' | relative_url }}" {% if page.nav == 'diario' %}class="active"{% endif %}>Diário</a>
+      <a href="{{ '/doutorado/' | relative_url }}" {% if page.nav == 'doutorado' %}class="active"{% endif %}>Doutorado</a>
+      <a href="{{ '/pratica/' | relative_url }}" {% if page.nav == 'pratica' %}class="active"{% endif %}>Prática</a>
+      <a href="{{ '/ideias/' | relative_url }}" {% if page.nav == 'ideias' %}class="active"{% endif %}>Ideias</a>
+      <a href="{{ '/videos/' | relative_url }}" {% if page.nav == 'videos' %}class="active"{% endif %}>Vídeos</a>
+      <a href="{{ '/publicacoes/' | relative_url }}" {% if page.nav == 'publicacoes' %}class="active"{% endif %}>Publicações</a>
+      <a href="{{ '/sobre/' | relative_url }}" {% if page.nav == 'sobre' %}class="active"{% endif %}>Sobre</a>
+    </nav>
+  </div>
+
   <header class="masthead">
-    <div class="masthead-inner">
-      <p class="masthead-eyebrow">Rafael Maldonado Canesso</p>
-      <a class="masthead-title" href="{{ '/' | relative_url }}">Diário Tributário</a>
-      <p class="masthead-tagline">estudos · ideias · indagações — direito tributário</p>
-    </div>
+    <p class="masthead-eyebrow">Rafael Maldonado Canesso</p>
+    <a class="masthead-title" href="{{ '/' | relative_url }}">Diário Tributário</a>
+    <p class="masthead-tagline">estudos, ideias e indagações em direito tributário</p>
     <nav class="site-nav">
       <a href="{{ '/diario/' | relative_url }}" {% if page.nav == 'diario' %}class="active"{% endif %}>Diário</a>
       <a href="{{ '/doutorado/' | relative_url }}" {% if page.nav == 'doutorado' %}class="active"{% endif %}>Doutorado</a>
@@ -37,7 +51,7 @@
     <div class="footer-inner">
       <div class="footer-brand">
         <p class="footer-title">Diário Tributário</p>
-        <p class="footer-sub">A jornada de Rafael Maldonado Canesso no direito tributário — doutorado, prática e pensamento.</p>
+        <p class="footer-sub">O diário de Rafael Maldonado Canesso no direito tributário.</p>
       </div>
       <div class="footer-links">
         <a href="{{ site.youtube_channel }}" target="_blank" rel="noopener">YouTube</a>
@@ -45,9 +59,11 @@
         <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
         <a href="mailto:{{ site.author.email }}">Contato</a>
       </div>
-      <p class="footer-note">O conteúdo deste diário tem caráter acadêmico e informativo e não constitui aconselhamento jurídico. Opiniões pessoais do autor.</p>
+      <p class="footer-note">O conteúdo deste diário tem caráter acadêmico e informativo e não constitui aconselhamento jurídico. Opiniões pessoais do autor. Fotografias via Unsplash.</p>
       <p class="footer-copy">© 2026 Rafael Maldonado Canesso</p>
     </div>
   </footer>
+
+  <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
 </body>
 </html>

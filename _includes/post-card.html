@@ -1,9 +1,16 @@
-<article class="post-card">
-  <div class="post-card-meta">
-    <span>{{ include.post.date | date: "%d.%m.%Y" }}</span>
-    {% if include.post.categoria %}<span class="cat-chip">{{ include.post.categoria_label | default: include.post.categoria }}</span>{% endif %}
+<article class="post-card reveal">
+  {% if include.post.imagem %}
+  <a class="post-card-img" href="{{ include.post.url | relative_url }}" aria-hidden="true" tabindex="-1">
+    <img src="{{ include.post.imagem }}?q=75&w=900&auto=format&fit=crop" alt="" loading="lazy">
+  </a>
+  {% endif %}
+  <div class="post-card-body">
+    <div class="post-card-meta">
+      <span>{{ include.post.date | date: "%d.%m.%Y" }}</span>
+      {% if include.post.categoria %}<span class="cat-chip">{{ include.post.categoria_label | default: include.post.categoria }}</span>{% endif %}
+    </div>
+    <h3><a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a></h3>
+    <p>{{ include.post.resumo }}</p>
+    <a class="read-on" href="{{ include.post.url | relative_url }}">Continuar lendo →</a>
   </div>
-  <h3><a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a></h3>
-  <p>{{ include.post.resumo }}</p>
-  <a class="read-on" href="{{ include.post.url | relative_url }}">Continuar lendo →</a>
 </article>

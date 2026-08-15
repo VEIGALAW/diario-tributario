@@ -18,10 +18,14 @@ date: AAAA-MM-DD
 categoria: doutorado   # doutorado | pratica | ideias
 categoria_label: "Doutorado"   # "Doutorado" | "Da prática" | "Ideias"
 resumo: "Uma frase-isca de até 200 caracteres, sem aspas internas."
+imagem: https://images.unsplash.com/photo-XXXXXXXX   # URL base do Unsplash, SEM query string (o template acrescenta os parâmetros)
+imagem_alt: "Descrição curta da foto"
 ---
 ```
 
-2. Corpo em Markdown, voz do Rafael em primeira pessoa (direta, honesta, elegante). Subtítulos com `##`. Para embutir vídeo do canal:
+Para achar uma foto nova: resolver a URL base com `curl -s -o /dev/null -w '%{redirect_url}' "https://unsplash.com/photos/<ID>/download?w=640"` e usar só a parte antes do `?`. Baixar uma prévia pequena e OLHAR a imagem antes de usar.
+
+2. Corpo em Markdown, voz do Rafael em primeira pessoa (direta, honesta, elegante). **Regra anti-IA (pedido expresso do Rafael):** no máximo 1 travessão (—) por post; proibido contraste dicotômico ("não é X, é Y" e variantes), aforismo-parágrafo de uma linha, fecho com pergunta retórica ou "me conta", anáfora e tríades retóricas. Períodos encadeados, prosa que respira. Subtítulos com `##`. Para embutir vídeo do canal:
 
 ```html
 <div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" title="..." allowfullscreen loading="lazy"></iframe></div>

@@ -2,30 +2,39 @@
 layout: default
 title: "Início"
 ---
-<section class="hero">
-  <h1>Um diário aberto da jornada de um tributarista <em>em construção</em> — do doutorado à trincheira da prática.</h1>
-  <p>Aqui registro o que estudo, o que aprendo, o que me inquieta: as aulas do doutorado na PUC-SP, os problemas reais do contencioso e da consultoria, as leituras, os vídeos e as ideias ainda em formação.</p>
-  <div class="hero-actions">
-    <a class="btn btn-solid" href="{{ '/diario/' | relative_url }}">Ler o diário</a>
-    <a class="btn btn-ghost" href="{{ '/sobre/' | relative_url }}">Quem escreve</a>
+<section class="hero-full">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1502700807168-484a3e7889d0?q=80&w=2600&auto=format&fit=crop" alt="Biblioteca clássica com estantes altas de livros antigos" fetchpriority="high">
+  </div>
+  <div class="hero-copy">
+    <p class="hero-kicker">Um diário público de direito tributário</p>
+    <h1>O que estou aprendendo, registrado <em>enquanto aprendo</em>.</h1>
+    <p>As aulas e leituras do doutorado na PUC-SP, as questões que o contencioso e a consultoria me trazem toda semana, os vídeos do canal e as ideias que ainda estão tomando forma.</p>
+    <div class="hero-actions">
+      <a class="btn btn-solid" href="{{ '/diario/' | relative_url }}">Ler o diário</a>
+      <a class="btn btn-ghost" href="{{ '/sobre/' | relative_url }}">Quem escreve</a>
+    </div>
   </div>
 </section>
 
 <section class="band">
   <div class="band-inner">
     {% assign destaque = site.posts | first %}
-    <div class="featured">
-      <div class="featured-accent">
-        <span class="section-kicker">No prelo · {{ destaque.date | date: "%d.%m.%Y" }}</span>
-        <h3><a href="{{ destaque.url | relative_url }}">{{ destaque.title }}</a></h3>
-      </div>
+    <div class="featured reveal">
+      {% if destaque.imagem %}
+      <a class="featured-img" href="{{ destaque.url | relative_url }}" aria-hidden="true" tabindex="-1">
+        <img src="{{ destaque.imagem }}?q=80&w=1400&auto=format&fit=crop" alt="" loading="lazy">
+      </a>
+      {% endif %}
       <div class="featured-body">
+        <span class="section-kicker">Entrada mais recente · {{ destaque.date | date: "%d.%m.%Y" }}</span>
+        <h3><a href="{{ destaque.url | relative_url }}">{{ destaque.title }}</a></h3>
         <p>{{ destaque.resumo }}</p>
         <a class="read-on" href="{{ destaque.url | relative_url }}">Continuar lendo →</a>
       </div>
     </div>
 
-    <div class="section-head">
+    <div class="section-head reveal">
       <div>
         <span class="section-kicker">Últimas entradas</span>
         <h2 class="section-title">O diário, dia após dia</h2>
@@ -42,7 +51,7 @@ title: "Início"
 
 <section class="band band-green">
   <div class="band-inner">
-    <div class="section-head">
+    <div class="section-head reveal">
       <div>
         <span class="section-kicker">Do canal</span>
         <h2 class="section-title">Os vídeos mais assistidos</h2>
@@ -51,7 +60,7 @@ title: "Início"
     </div>
     <div class="video-grid">
       {% for v in site.data.videos.destaques %}
-      <a class="video-card" href="https://www.youtube.com/watch?v={{ v.id }}" target="_blank" rel="noopener">
+      <a class="video-card reveal" href="https://www.youtube.com/watch?v={{ v.id }}" target="_blank" rel="noopener">
         <div class="video-thumb">
           <img src="https://i.ytimg.com/vi/{{ v.id }}/hqdefault.jpg" alt="{{ v.titulo }}" loading="lazy">
           <span class="video-dur">{{ v.dur }}</span>
@@ -66,14 +75,14 @@ title: "Início"
 
 <section class="band band-deep">
   <div class="band-inner">
-    <div class="section-head">
+    <div class="section-head reveal">
       <div>
         <span class="section-kicker">Publicações</span>
         <h2 class="section-title">O que já saiu do forno</h2>
       </div>
       <a class="section-more" href="{{ '/publicacoes/' | relative_url }}">Ver tudo</a>
     </div>
-    <div class="pub-book">
+    <div class="pub-book reveal">
       <div class="pub-book-cover"><span>Tributação sobre<br>lucros e<br>dividendos<br>—<br>IBDT · 2025</span></div>
       <div>
         <p class="pub-meta">Livro · {{ site.data.publicacoes.livro.meta }}</p>
@@ -81,8 +90,8 @@ title: "Início"
         <p class="pub-abstract">{{ site.data.publicacoes.livro.desc | truncate: 220 }}</p>
       </div>
     </div>
-    <p style="text-align:center; color: var(--ink-soft); font-style: italic;">
-      + artigo na Revista de Direito Tributário da APET (2026, em coautoria com Martha Toribio Leão) e 14 artigos publicados no Migalhas.
+    <p class="reveal" style="text-align:center; color: var(--ink-soft); font-style: italic;">
+      Também: artigo na Revista de Direito Tributário da APET (2026, em coautoria com Martha Toribio Leão) e catorze artigos publicados no Migalhas.
     </p>
   </div>
 </section>
