@@ -6,6 +6,7 @@ categoria: doutorado
 categoria_label: "Doutorado"
 resumo: "Anotações em aberto sobre a Lei 15.270/2025, o imposto mínimo e a exigência de renda realizada, a partir do artigo que publiquei com a Profa. Martha Leão na APET."
 imagem: https://images.unsplash.com/photo-1783091478517-e6fb341b516e
+image: "https://images.unsplash.com/photo-1783091478517-e6fb341b516e?q=80&w=1200&auto=format&fit=crop"
 imagem_alt: "Fachada clássica com colunas sob céu de tempestade"
 ---
 

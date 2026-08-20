@@ -6,6 +6,7 @@ categoria: doutorado
 categoria_label: "Doutorado"
 resumo: "Os seis eixos bibliográficos que organizam a tese sobre tributação cedular da renda do capital e o que eu procuro em cada um deles."
 imagem: https://images.unsplash.com/photo-1521587760476-6c12a4b040da
+image: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=1200&auto=format&fit=crop"
 imagem_alt: "Estante de madeira repleta de livros antigos coloridos"
 ---
 

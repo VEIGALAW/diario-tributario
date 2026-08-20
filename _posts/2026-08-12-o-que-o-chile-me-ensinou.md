@@ -6,6 +6,7 @@ categoria: doutorado
 categoria_label: "Doutorado"
 resumo: "Por que fui buscar no Chile, com seus trinta anos de integração total, respostas para o problema brasileiro dos dividendos isentos, e o que o mestrado antecipou da Lei 15.270/2025."
 imagem: https://images.unsplash.com/photo-1689850543263-01a52ccc6943
+image: "https://images.unsplash.com/photo-1689850543263-01a52ccc6943?q=80&w=1200&auto=format&fit=crop"
 imagem_alt: "Santiago do Chile com a cordilheira dos Andes nevada ao fundo"
 ---
 

@@ -6,6 +6,7 @@ categoria: pratica
 categoria_label: "Da prática"
 resumo: "Um ano de colunas no Migalhas, do trust à multa isolada, e as lições que ficaram: clareza sob prazo, textos que envelhecem depressa e a ignorância que só a escrita revela."
 imagem: https://images.unsplash.com/photo-1764087957302-ef0756ed8e0a
+image: "https://images.unsplash.com/photo-1764087957302-ef0756ed8e0a?q=80&w=1200&auto=format&fit=crop"
 imagem_alt: "Caneta-tinteiro preta e dourada sobre caderno aberto"
 ---
 

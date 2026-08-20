@@ -6,6 +6,7 @@ categoria: doutorado
 categoria_label: "Doutorado"
 resumo: "Explico por que chamo de neo-estratificação fiscal o descompasso entre a tributação cedular da renda do capital e o perfil real dos 5,5 milhões de investidores que hoje passam pela B3."
 imagem: https://images.unsplash.com/photo-1780445333332-3abb7dde9ad1
+image: "https://images.unsplash.com/photo-1780445333332-3abb7dde9ad1?q=80&w=1200&auto=format&fit=crop"
 imagem_alt: "Colunas clássicas em preto e branco com sombras fortes"
 ---
 

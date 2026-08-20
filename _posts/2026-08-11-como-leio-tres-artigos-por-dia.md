@@ -6,6 +6,7 @@ categoria: ideias
 categoria_label: "Ideias"
 resumo: "Como concilio a advocacia em tempo integral com as leituras do doutorado: leitura em camadas, um critério honesto de descarte e fichamento imediato ao fim de cada texto."
 imagem: https://images.unsplash.com/photo-1775129667571-7fa3f51c05e3
+image: "https://images.unsplash.com/photo-1775129667571-7fa3f51c05e3?q=80&w=1200&auto=format&fit=crop"
 imagem_alt: "Escrivaninha de madeira com caderno aberto, caneta-tinteiro, vela e café"
 ---
 

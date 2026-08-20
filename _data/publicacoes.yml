@@ -11,6 +11,10 @@ academicos:
     url: "https://revistas.apet.org.br/index.php/rdta/article/view/825"
     desc: "Exame crítico do IRPFM instituído pela Lei nº 15.270/2025 e de seus efeitos sobre a integração entre a tributação da pessoa jurídica e da pessoa física, em diálogo com o modelo chileno de imputação."
 
+conjur:
+  - { titulo: "Interpretação do PL 4758/2020: críticas e elogios ao trust brasileiro", data: "24.08.2022", url: "https://conjur.com.br/2022-ago-24/rafael-canesso-interpretacao-pl-47582020/" }
+  - { titulo: "Tributação do trust deve ser pelo ITCMD", data: "10.08.2022", url: "https://conjur.com.br/2022-ago-10/rafael-canesso-tributacao-trust2/" }
+
 migalhas:
   - { titulo: "A inconstitucionalidade da multa por negativa de compensação tributária", data: "06.06.2023", url: "https://www.migalhas.com.br/depeso/387764/inconstitucionalidade-da-multa-por-negativa-de-compensacao-tributaria" }
   - { titulo: "ITCMD, trust, Sísifo e o fisco de São Paulo", data: "08.05.2023", url: "https://www.migalhas.com.br/depeso/386022/itcmd-trust-sisifo-e-o-fisco-de-sao-paulo" }

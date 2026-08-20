@@ -6,6 +6,7 @@ categoria: ideias
 categoria_label: "Ideias"
 resumo: "Decidi estudar em público. No post de estreia, explico por que um advogado com rotina cheia mantém um diário aberto de doutorado, prática e ideias, e o que prometo a quem acompanhar."
 imagem: https://images.unsplash.com/photo-1535905557558-afc4877a26fc
+image: "https://images.unsplash.com/photo-1535905557558-afc4877a26fc?q=80&w=1200&auto=format&fit=crop"
 imagem_alt: "Escada apoiada numa estante alta de livros antigos"
 ---
 

@@ -4,6 +4,13 @@ description: "O diário de Rafael Maldonado Canesso na jornada do direito tribut
 author:
   name: "Rafael Maldonado Canesso"
   email: "maldonadocanesso@gmail.com"
+
+# Dados estruturados (jekyll-seo-tag): perfis oficiais do autor
+social:
+  name: "Rafael Maldonado Canesso"
+  links:
+    - "https://www.youtube.com/@rafaelmaldonadocanesso"
+    - "https://www.migalhas.com.br/autor/rafael-maldonado-canesso"
 url: "https://veigalaw.github.io"
 baseurl: "/diario-tributario"
 lang: "pt-BR"
