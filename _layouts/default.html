@@ -7,15 +7,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://images.unsplash.com">
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2218%22 fill=%22%2316382B%22/><text x=%2250%22 y=%2268%22 font-size=%2252%22 text-anchor=%22middle%22 fill=%22%23C9A45C%22 font-family=%22Georgia,serif%22>DT</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23F4EDDD%22/><rect x=%2210%22 y=%2210%22 width=%2228%22 height=%2228%22 fill=%22%23E01A2B%22/><text x=%2252%22 y=%2274%22 font-size=%2250%22 fill=%22%231D2B50%22 font-family=%22Georgia,serif%22 font-weight=%22bold%22>DT</text></svg>">
 </head>
 <body>
   <div class="progress" aria-hidden="true"></div>
 
-  <div class="topbar" aria-hidden="false">
+  <div class="topbar">
     <a class="topbar-brand" href="{{ '/' | relative_url }}">Diário Tributário</a>
     <nav>
       <a href="{{ '/diario/' | relative_url }}" {% if page.nav == 'diario' %}class="active"{% endif %}>Diário</a>
@@ -29,18 +29,25 @@
   </div>
 
   <header class="masthead">
-    <p class="masthead-eyebrow">Rafael Maldonado Canesso</p>
-    <a class="masthead-title" href="{{ '/' | relative_url }}">Diário Tributário</a>
-    <p class="masthead-tagline">estudos, ideias e indagações em direito tributário</p>
-    <nav class="site-nav">
-      <a href="{{ '/diario/' | relative_url }}" {% if page.nav == 'diario' %}class="active"{% endif %}>Diário</a>
-      <a href="{{ '/doutorado/' | relative_url }}" {% if page.nav == 'doutorado' %}class="active"{% endif %}>Doutorado</a>
-      <a href="{{ '/pratica/' | relative_url }}" {% if page.nav == 'pratica' %}class="active"{% endif %}>Prática</a>
-      <a href="{{ '/ideias/' | relative_url }}" {% if page.nav == 'ideias' %}class="active"{% endif %}>Ideias</a>
-      <a href="{{ '/videos/' | relative_url }}" {% if page.nav == 'videos' %}class="active"{% endif %}>Vídeos</a>
-      <a href="{{ '/publicacoes/' | relative_url }}" {% if page.nav == 'publicacoes' %}class="active"{% endif %}>Publicações</a>
-      <a href="{{ '/sobre/' | relative_url }}" {% if page.nav == 'sobre' %}class="active"{% endif %}>Sobre</a>
-    </nav>
+    <div class="masthead-strip">
+      <span>Rafael Maldonado Canesso</span>
+      <span>Estudos, ideias e indagações em direito tributário</span>
+    </div>
+    <div class="masthead-bar">
+      <a class="masthead-brand" href="{{ '/' | relative_url }}">
+        <span class="mark"></span>
+        <span class="name">Diário Tributário</span>
+      </a>
+      <nav class="site-nav">
+        <a href="{{ '/diario/' | relative_url }}" {% if page.nav == 'diario' %}class="active"{% endif %}>Diário</a>
+        <a href="{{ '/doutorado/' | relative_url }}" {% if page.nav == 'doutorado' %}class="active"{% endif %}>Doutorado</a>
+        <a href="{{ '/pratica/' | relative_url }}" {% if page.nav == 'pratica' %}class="active"{% endif %}>Prática</a>
+        <a href="{{ '/ideias/' | relative_url }}" {% if page.nav == 'ideias' %}class="active"{% endif %}>Ideias</a>
+        <a href="{{ '/videos/' | relative_url }}" {% if page.nav == 'videos' %}class="active"{% endif %}>Vídeos</a>
+        <a href="{{ '/publicacoes/' | relative_url }}" {% if page.nav == 'publicacoes' %}class="active"{% endif %}>Publicações</a>
+        <a href="{{ '/sobre/' | relative_url }}" {% if page.nav == 'sobre' %}class="active"{% endif %}>Sobre</a>
+      </nav>
+    </div>
   </header>
 
   <main>
@@ -49,10 +56,8 @@
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <div class="footer-brand">
-        <p class="footer-title">Diário Tributário</p>
-        <p class="footer-sub">O diário de Rafael Maldonado Canesso no direito tributário.</p>
-      </div>
+      <p class="footer-title">Diário Tributário</p>
+      <p class="footer-sub">O diário de Rafael Maldonado Canesso no direito tributário.</p>
       <div class="footer-links">
         <a href="{{ site.youtube_channel }}" target="_blank" rel="noopener">YouTube</a>
         <a href="{{ site.migalhas_author }}" target="_blank" rel="noopener">Migalhas</a>

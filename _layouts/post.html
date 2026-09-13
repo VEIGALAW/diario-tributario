@@ -3,20 +3,35 @@ layout: default
 ---
 <article>
   {% if page.imagem %}
-  <header class="post-cover">
-    <div class="cover-bg">
-      <img src="{{ page.imagem }}?q=80&w=2400&auto=format&fit=crop" alt="{{ page.imagem_alt | default: page.title }}" fetchpriority="high">
-    </div>
-    <div class="post-cover-copy">
-      <div class="post-card-meta">
-        <span>{{ page.date | date: "%d.%m.%Y" }}</span>
-        {% if page.categoria %}<span class="cat-chip">{{ page.categoria_label | default: page.categoria }}</span>{% endif %}
-        <span>{{ content | number_of_words | divided_by: 190 | at_least: 1 }} min de leitura</span>
-      </div>
-      <h1>{{ page.title }}</h1>
-      {% if page.resumo %}<p class="post-resumo">{{ page.resumo }}</p>{% endif %}
+  <header class="post-head">
+    <span class="kicker">{{ page.categoria_label | default: page.categoria }}</span>
+    <h1>{{ page.title }}</h1>
+    {% if page.resumo %}<p class="post-resumo">{{ page.resumo }}</p>{% endif %}
+    <div class="nh-meta">
+      <span>{{ page.date | date: "%d.%m.%Y" }}</span>
+      <span class="sep">|</span>
+      <span>{{ content | number_of_words | divided_by: 190 | at_least: 1 }} min de leitura</span>
     </div>
   </header>
+  <div class="post-collage-wrap">
+    <div class="post-collage">
+      <div class="pc-navy"></div>
+      <div class="pc-mustard"></div>
+      <div class="pc-photo"><img src="{{ page.imagem }}?q=80&w=1400&auto=format&fit=crop" alt="{{ page.imagem_alt | default: page.title }}" fetchpriority="high"></div>
+      <div class="pc-chart">
+        <svg viewBox="0 0 180 104" fill="none">
+          <rect x="150" y="0" width="30" height="104" fill="#EFE3F2"></rect>
+          <path d="M0 26 H180 M0 52 H180 M0 78 H180" stroke="#C9BEA4" stroke-width="1" stroke-dasharray="2 4"></path>
+          <path d="M4 88 L26 80 L48 84 L70 62 L92 68 L114 46 L136 52 L156 26 L174 20" stroke="#E01A2B" stroke-width="2.2"></path>
+          <circle cx="174" cy="20" r="3" fill="#E01A2B"></circle>
+        </svg>
+      </div>
+      <div class="pc-duo"><img src="{{ page.imagem }}?q=60&w=500&auto=format&fit=crop" alt=""></div>
+      <div class="pc-half"></div>
+      <svg class="pc-squig" viewBox="0 0 110 38" fill="none"><path d="M6 26 C28 6 42 10 30 22 C22 30 52 22 76 16 C92 12 100 18 106 12" stroke="#182A63" stroke-width="2"></path></svg>
+    </div>
+  </div>
+  {% if page.imagem_alt %}<p class="post-credit">Colagem sobre fotografia: {{ page.imagem_alt | downcase }}. Fotos via Unsplash.</p>{% endif %}
   {% else %}
   <header class="post-hero">
     <div class="post-card-meta">
