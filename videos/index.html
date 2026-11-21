@@ -1,36 +1,41 @@
 ---
 layout: default
-title: "Vídeos"
+title: "Vídeos de direito tributário"
+description: "Os 52 vídeos do canal de Rafael Maldonado Canesso: CTN comentado, peças da 2ª Fase da OAB, cálculo pela SELIC, honorários e prática do contencioso tributário."
 nav: videos
 ---
-<header class="page-hero">
-  <h1>O canal</h1>
+<header class="page-hero wrap">
+  <div class="inner">
+  <p class="eyebrow chap-label">O canal</p>
+  <h1>Vídeos de direito tributário</h1>
   <p class="page-lede">São 52 vídeos de estudos em direito tributário, todos gratuitos: cursos completos, peças da 2ª Fase da OAB, o CTN comentado artigo por artigo e a prática do contencioso.</p>
   <div class="hero-actions">
-    <a class="btn btn-solid" href="{{ site.youtube_channel }}" target="_blank" rel="noopener">Inscrever-se no canal</a>
+    <a class="ghost solid" href="{{ site.youtube_channel }}" target="_blank" rel="noopener">Inscrever-se no canal</a>
   </div>
+</div>
 </header>
 
-<div class="list-wrap">
-  <div class="video-embed reveal">
+<div class="list-wrap wrap"><div class="inner">
+  <div class="video-embed">
     <iframe src="https://www.youtube-nocookie.com/embed/lZEQBtGzAV8" title="Atualizar valores pela SELIC, fácil e rápido" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
   </div>
 
   {% for serie in site.data.videos.series %}
   <div class="video-series-block">
-    <h2 class="video-series-title reveal">{{ serie.nome }}</h2>
-    <p class="video-series-desc reveal">{{ serie.desc }}</p>
+    <h2 class="video-series-title">{{ serie.nome }}</h2>
+    <p class="video-series-desc">{{ serie.desc }}</p>
     <div class="video-grid">
       {% for v in serie.videos %}
-      <a class="video-card reveal" href="https://www.youtube.com/watch?v={{ v.id }}" target="_blank" rel="noopener">
+      <a class="video-card" href="https://www.youtube.com/watch?v={{ v.id }}" target="_blank" rel="noopener">
         <div class="video-thumb">
           <img src="https://i.ytimg.com/vi/{{ v.id }}/hqdefault.jpg" alt="{{ v.titulo }}" loading="lazy">
           <span class="video-dur">{{ v.dur }}</span>
         </div>
-        <h4>{{ v.titulo }}</h4>
+        <h3>{{ v.titulo }}</h3>
       </a>
       {% endfor %}
     </div>
   </div>
   {% endfor %}
+</div>
 </div>

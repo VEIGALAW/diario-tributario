@@ -1,0 +1,36 @@
+{%- comment -%} Dados estruturados: autor (Person) em todas as páginas e trilha (BreadcrumbList) nos posts {%- endcomment -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "{{ '/sobre/' | absolute_url }}#rafael",
+  "name": "Rafael Maldonado Canesso",
+  "alternateName": "Rafael Canesso",
+  "url": "{{ '/sobre/' | absolute_url }}",
+  "jobTitle": "Advogado tributarista",
+  "description": "Advogado tributarista, Head of Tax da Veiga Partners, mestre pelo IBDT e doutorando em Direito Tributário na PUC-SP.",
+  "worksFor": { "@type": "Organization", "name": "Veiga Partners" },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Pontifícia Universidade Católica de São Paulo (PUC-SP)" },
+    { "@type": "EducationalOrganization", "name": "Instituto Brasileiro de Direito Tributário (IBDT)" }
+  ],
+  "knowsAbout": ["Direito tributário", "Tributação da renda", "Tributação de lucros e dividendos", "Imposto de renda", "Contencioso tributário"],
+  "sameAs": [
+    "{{ site.youtube_channel }}",
+    "{{ site.migalhas_author }}"
+  ]
+}
+</script>
+{%- if page.layout == 'post' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Diário Tributário", "item": "{{ '/' | absolute_url }}" },
+    { "@type": "ListItem", "position": 2, "name": "{{ page.categoria_label | default: 'Diário' }}", "item": "{{ '/' | append: page.categoria | append: '/' | absolute_url }}" },
+    { "@type": "ListItem", "position": 3, "name": {{ page.title | jsonify }} }
+  ]
+}
+</script>
+{%- endif %}

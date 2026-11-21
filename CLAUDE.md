@@ -18,12 +18,13 @@ date: AAAA-MM-DD
 categoria: doutorado   # doutorado | pratica | ideias
 categoria_label: "Doutorado"   # "Doutorado" | "Da prática" | "Ideias"
 resumo: "Uma frase-isca de até 200 caracteres, sem aspas internas."
-imagem: https://images.unsplash.com/photo-XXXXXXXX   # URL base do Unsplash, SEM query string (o template acrescenta os parâmetros)
-imagem_alt: "Descrição curta da foto"
+description: "O mesmo texto do resumo (ou versão de até 155 caracteres com o termo que a pessoa digitaria no Google). É o que aparece no resultado da busca."
+marca: "90 dias"   # 1 a 3 palavras que aparecem grandes no bloco do post (um artigo de lei, um número, um prazo)
+image: "/assets/img/og/slug-do-post.png"   # cartão de compartilhamento 1200x630 (opcional; sem ele vale o padrão)
 ---
 ```
 
-Para achar uma foto nova: resolver a URL base com `curl -s -o /dev/null -w '%{redirect_url}' "https://unsplash.com/photos/<ID>/download?w=640"` e usar só a parte antes do `?`. Baixar uma prévia pequena e OLHAR a imagem antes de usar.
+Foto é opcional. Os posts novos usam o bloco tipográfico com `marca`; os de agosto mantêm `imagem` (URL base do Unsplash, sem query string) e `imagem_alt`.
 
 2. Corpo em Markdown, voz do Rafael em primeira pessoa (direta, honesta, elegante). **Regra anti-IA (pedido expresso do Rafael):** no máximo 1 travessão (—) por post; proibido contraste dicotômico ("não é X, é Y" e variantes), aforismo-parágrafo de uma linha, fecho com pergunta retórica ou "me conta", anáfora e tríades retóricas. Períodos encadeados, prosa que respira. Subtítulos com `##`. Para embutir vídeo do canal:
 
@@ -33,6 +34,8 @@ Para achar uma foto nova: resolver a URL base com `curl -s -o /dev/null -w '%{re
 
 3. `git add` + commit + push na `main`. Pronto.
 
+**Título pensando na busca:** o título precisa conter o termo que alguém digitaria no Google (lei, tema do STF, nome do tributo), de preferência no começo. "IBS e CBS na base do lucro presumido: o que diz a lei" é encontrado; "O que aprendi esta semana" não. Subtítulos `##` em número de três ou mais geram o sumário lateral do post.
+
 **Cuidados:** data futura = post não aparece (Jekyll ignora futuros). Nunca citar clientes, casos identificáveis ou estratégias internas da Veiga. Não publicar detalhes do plano editorial acadêmico (alvos de revista/cronograma) — tema e ideias da tese são públicos, a estratégia não.
 
 ## Estrutura
@@ -40,7 +43,16 @@ Para achar uma foto nova: resolver a URL base com `curl -s -o /dev/null -w '%{re
 - `_posts/` — as entradas do diário (o que cresce no dia a dia)
 - `_data/videos.yml` — catálogo dos 52 vídeos do canal em séries (a página /videos/ e a home leem daqui)
 - `_data/publicacoes.yml` — livro, artigos acadêmicos e colunas do Migalhas (página /publicacoes/)
-- `_layouts/`, `_includes/`, `assets/css/main.css` — o design (editorial: papel marfim `#FAF7F0`, verde-garrafa `#16382B`, dourado `#A87C2E`; fontes Fraunces/Newsreader/Inter)
+- `_layouts/`, `_includes/`, `assets/css/main.css` — o design (v5, na linguagem da intranet da Veiga: abertura noturna `#0C0F14`, papel branco, off-white `#F5F4F0`, grafite `#4D4D4F`, azul `#227BA6`; fontes Sora, Instrument Sans e JetBrains Mono)
+- `_includes/row.html` — a linha de post usada em todas as listas; `_includes/tile.html` — o bloco do post na abertura da home
+- `_includes/schema.html` — dados estruturados do autor (Person) e trilha do post; `_includes/author-box.html` — caixa "Quem escreve" no fim de cada post; `_includes/nav.html` — o menu (um lugar só)
+- `assets/img/og-padrao.png` — imagem padrão de compartilhamento (home e seções); `assets/img/og/` — cartões por post
+
+## SEO (o que já está montado)
+
+- Título da home vem de `title` + `tagline` do `_config.yml`; cada seção tem `title` e `description` próprios no front matter.
+- O `robots.txt` só vale na raiz do domínio, que pertence ao repositório `VEIGALAW/veigalaw.github.io`, e não a este.
+- O sitemap fica em `/diario-tributario/sitemap.xml` e precisa estar enviado no Google Search Console.
 - Páginas de seção: `diario/`, `doutorado/`, `pratica/`, `ideias/`, `videos/`, `publicacoes/`, `sobre/` — filtram posts por `categoria`
 
 ## Fatos fixos (não alterar sem pedido do Rafael)

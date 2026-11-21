@@ -1,0 +1,7 @@
+<span class="tile{% unless include.post.imagem %} tile-type{% endunless %}">
+  {% if include.post.imagem %}<img src="{{ include.post.imagem }}?q=70&w=800&auto=format&fit=crop" alt="" loading="lazy" width="800" height="1000">{% endif %}
+  <span class="wash"></span>
+  {% if include.post.marca %}<span class="tile-mark">{{ include.post.marca }}</span>{% endif %}
+  <span class="tile-no">{{ include.post.categoria_label | default: "Diário" }}</span>
+  <span class="tile-area">{{ include.post.date | date: "%d.%m.%Y" }} · {{ include.post.content | number_of_words | divided_by: 190 | at_least: 1 }} min</span>
+</span>

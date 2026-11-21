@@ -1,22 +1,24 @@
 ---
 layout: default
-title: "Prática"
+title: "Prática tributária"
+description: "O que a advocacia tributária do dia a dia ensina: Lei 15.270/2025, dividendos, contencioso e as lições que a doutrina ainda não escreveu."
 nav: pratica
 ---
-<header class="page-hero">
-  <h1>Da prática</h1>
-  <p class="page-lede">O que o dia a dia do direito tributário vem me ensinando: problemas reais que chegam à mesa, soluções que funcionaram e lições que a doutrina ainda não escreveu.</p>
+<header class="page-hero wrap">
+  <div class="inner">
+    <p class="eyebrow chap-label">Da prática</p>
+    <h1>Da prática</h1>
+    <p class="page-lede">O que o dia a dia do direito tributário vem me ensinando: problemas reais que chegam à mesa, soluções que funcionaram e lições que a doutrina ainda não escreveu.</p>
+  </div>
 </header>
 
-<div class="list-wrap">
-  {% assign posts = site.posts | where: "categoria", "pratica" %}
-  {% if posts.size > 0 %}
-  <div class="post-grid">
-    {% for post in posts %}
-      {% include post-card.html post=post %}
-    {% endfor %}
+<section class="index wrap">
+  <div class="inner">
+    <ol class="rows">
+      {% assign posts = site.posts | where: "categoria", "pratica" %}
+      {% for post in posts %}
+        {% include row.html post=post n=forloop.index %}
+      {% endfor %}
+    </ol>
   </div>
-  {% else %}
-  <p style="text-align:center; color: var(--ink-soft); font-style: italic;">As primeiras entradas da prática chegam em breve.</p>
-  {% endif %}
-</div>
+</section>

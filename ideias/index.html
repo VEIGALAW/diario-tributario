@@ -1,22 +1,24 @@
 ---
 layout: default
-title: "Ideias"
+title: "Ideias e indagações"
+description: "Hipóteses em formação, métodos de estudo e perguntas em aberto sobre direito tributário, por Rafael Maldonado Canesso."
 nav: ideias
 ---
-<header class="page-hero">
-  <h1>Ideias &amp; indagações</h1>
-  <p class="page-lede">O laboratório aberto do pensamento: hipóteses em formação, métodos de estudo, provocações e perguntas que ainda estou tentando responder.</p>
+<header class="page-hero wrap">
+  <div class="inner">
+    <p class="eyebrow chap-label">Ideias e indagações</p>
+    <h1>Ideias &amp; indagações</h1>
+    <p class="page-lede">O laboratório aberto do pensamento: hipóteses em formação, métodos de estudo, provocações e perguntas que ainda estou tentando responder.</p>
+  </div>
 </header>
 
-<div class="list-wrap">
-  {% assign posts = site.posts | where: "categoria", "ideias" %}
-  {% if posts.size > 0 %}
-  <div class="post-grid">
-    {% for post in posts %}
-      {% include post-card.html post=post %}
-    {% endfor %}
+<section class="index wrap">
+  <div class="inner">
+    <ol class="rows">
+      {% assign posts = site.posts | where: "categoria", "ideias" %}
+      {% for post in posts %}
+        {% include row.html post=post n=forloop.index %}
+      {% endfor %}
+    </ol>
   </div>
-  {% else %}
-  <p style="text-align:center; color: var(--ink-soft); font-style: italic;">As primeiras ideias chegam em breve.</p>
-  {% endif %}
-</div>
+</section>

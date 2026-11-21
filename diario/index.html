@@ -1,17 +1,23 @@
 ---
 layout: default
 title: "Diário"
+description: "Todas as entradas do Diário Tributário, de Rafael Maldonado Canesso: estudos do doutorado, aprendizados da prática tributária, leituras e indagações."
 nav: diario
 ---
-<header class="page-hero">
-  <h1>O diário</h1>
-  <p class="page-lede">Todas as entradas em ordem cronológica inversa: os estudos do doutorado, os aprendizados da prática, as leituras e as indagações, na forma bruta em que aparecem.</p>
+<header class="page-hero wrap">
+  <div class="inner">
+    <p class="eyebrow chap-label">O diário</p>
+    <h1>O diário</h1>
+    <p class="page-lede">Todas as entradas em ordem cronológica inversa: os estudos do doutorado, os aprendizados da prática, as leituras e as indagações, na forma bruta em que aparecem.</p>
+  </div>
 </header>
 
-<div class="list-wrap">
-  <div class="post-grid">
-    {% for post in site.posts %}
-      {% include post-card.html post=post %}
-    {% endfor %}
+<section class="index wrap">
+  <div class="inner">
+    <ol class="rows">
+      {% for post in site.posts %}
+        {% include row.html post=post n=forloop.index %}
+      {% endfor %}
+    </ol>
   </div>
-</div>
+</section>

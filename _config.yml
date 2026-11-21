@@ -4,6 +4,11 @@ description: "O diário de Rafael Maldonado Canesso na jornada do direito tribut
 author:
   name: "Rafael Maldonado Canesso"
   email: "maldonadocanesso@gmail.com"
+  url: "https://veigalaw.github.io/diario-tributario/sobre/"
+
+# Cartão grande ao compartilhar (LinkedIn, WhatsApp, X)
+twitter:
+  card: summary_large_image
 
 # Dados estruturados (jekyll-seo-tag): perfis oficiais do autor
 social:
@@ -36,9 +41,17 @@ feed:
 defaults:
   - scope:
       path: ""
+    values:
+      image: "/assets/img/og-padrao.png"   # imagem de compartilhamento padrão; posts usam a própria
+  - scope:
+      path: ""
       type: "posts"
     values:
       layout: "post"
+  - scope:
+      path: "google2573b1e52d4b4e53.html"   # arquivo de verificação: fora do sitemap
+    values:
+      sitemap: false
 
 exclude:
   - README.md
