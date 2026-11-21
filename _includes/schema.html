@@ -17,10 +17,22 @@
   "knowsAbout": ["Direito tributário", "Tributação da renda", "Tributação de lucros e dividendos", "Imposto de renda", "Contencioso tributário"],
   "sameAs": [
     "{{ site.youtube_channel }}",
-    "{{ site.migalhas_author }}"
+    "{{ site.migalhas_author }}",
+    "https://revistas.apet.org.br/index.php/rdta/article/view/825"
   ]
 }
 </script>
+{%- if page.nav == 'sobre' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "url": "{{ '/sobre/' | absolute_url }}",
+  "name": "Rafael Maldonado Canesso, advogado tributarista",
+  "mainEntity": { "@id": "{{ '/sobre/' | absolute_url }}#rafael" }
+}
+</script>
+{%- endif %}
 {%- if page.layout == 'post' %}
 <script type="application/ld+json">
 {
