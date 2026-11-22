@@ -43,7 +43,7 @@ Foto é opcional. Os posts novos usam o bloco tipográfico com `marca`; os de ag
 - `_posts/` — as entradas do diário (o que cresce no dia a dia)
 - `_data/videos.yml` — catálogo dos 52 vídeos do canal em séries (a página /videos/ e a home leem daqui)
 - `_data/publicacoes.yml` — livro, artigos acadêmicos e colunas do Migalhas (página /publicacoes/)
-- `_layouts/`, `_includes/`, `assets/css/main.css` — o design (v5, na linguagem da intranet da Veiga: abertura noturna `#0C0F14`, papel branco, off-white `#F5F4F0`, grafite `#4D4D4F`, azul `#227BA6`; fontes Sora, Instrument Sans e JetBrains Mono)
+- `_layouts/`, `_includes/`, `assets/css/main.css` — o design (v6 "Biblioteca", escolhida pelo Rafael em 22/11/2026: papel creme `#F5F1E8`, tinta `#1A1A1A`, grafite `#4D4D4F`, vermelho Veiga `#C1272D` como único destaque, fotos em sépia `#754C24`, rodapé em tinta; títulos em Newsreader (serifa), corpo Instrument Sans, detalhes JetBrains Mono)
 - `_includes/row.html` — a linha de post usada em todas as listas; `_includes/tile.html` — o bloco do post na abertura da home
 - `_includes/schema.html` — dados estruturados do autor (Person) e trilha do post; `_includes/author-box.html` — caixa "Quem escreve" no fim de cada post; `_includes/nav.html` — o menu (um lugar só)
 - `assets/img/og-padrao.png` — imagem padrão de compartilhamento (home e seções); `assets/img/og/` — cartões por post
@@ -52,7 +52,7 @@ Foto é opcional. Os posts novos usam o bloco tipográfico com `marca`; os de ag
 
 - Título da home vem de `title` + `tagline` do `_config.yml`; cada seção tem `title` e `description` próprios no front matter.
 - O `robots.txt` só vale na raiz do domínio, que pertence ao repositório `VEIGALAW/veigalaw.github.io`, e não a este.
-- O sitemap fica em `/diario-tributario/sitemap.xml` e precisa estar enviado no Google Search Console.
+- O sitemap fica em `/diario-tributario/sitemap.xml`; enviado no Search Console em 22/11/2026 pela conta pessoal do Rafael (verificação: `googled03c1e71b6cf69a9.html`, não apagar). O `google2573b1e52d4b4e53.html` é de outra conta; também fica.
 - Páginas de seção: `diario/`, `doutorado/`, `pratica/`, `ideias/`, `videos/`, `publicacoes/`, `sobre/` — filtram posts por `categoria`
 
 ## Fatos fixos (não alterar sem pedido do Rafael)

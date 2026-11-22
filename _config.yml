@@ -6,9 +6,8 @@ author:
   email: "maldonadocanesso@gmail.com"
   url: "https://veigalaw.github.io/diario-tributario/sobre/"
 
-# Cartão grande ao compartilhar (LinkedIn, WhatsApp, X)
-twitter:
-  card: summary_large_image
+# Cartão grande ao compartilhar: twitter:card vai direto no _layouts/default.html
+# (sem conta no X, o bloco twitter: do jekyll-seo-tag gerava "@" vazio).
 
 # Dados estruturados (jekyll-seo-tag): perfis oficiais do autor
 social:
