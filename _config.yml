@@ -52,6 +52,10 @@ defaults:
       path: "google2573b1e52d4b4e53.html"   # arquivo de verificação: fora do sitemap
     values:
       sitemap: false
+  - scope:
+      path: "googled03c1e71b6cf69a9.html"   # verificação do Search Console (conta pessoal do Rafael)
+    values:
+      sitemap: false
 
 exclude:
   - README.md
